@@ -126,12 +126,12 @@ public:
 		return nodes.size();
 	}
 	size_t getEdgeCount() const {
-   size_t count = 0;
-   for (auto node : nodes) {
+   	size_t count = 0;
+   	for (auto node : nodes) {
        count += node->neighbors.size();
-   }
-   return count; // Учитываем, что каждое ребро учитывается дважды
-}
+   	}
+   	return count; // Учитываем, что каждое ребро учитывается дважды
+	}
 	size_t getVertexDegree(T value) const {
 		Node<T>* node = nullptr;
 
